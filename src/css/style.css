@@ -1,0 +1,42 @@
+:root{
+    --color-text-output: #fff;
+    --background-color-output: #313131;
+
+    /* card-info option */
+    --background-color-cards: #585858;
+    --color-text-cards: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 150px;
+    background-color: var(--background-color-output);
+    color: var(--color-text-output);
+}
+header h1{
+    text-align: center;
+    padding: 55px;
+}
+
+/* conteiner option */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body { background-color: aqua; }
+}
+.conteiner-space{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    row-gap: 20px;
+}
+card-info{
+    color: var(--color-text-cards);
+    width: 200px;
+    background-color: var(--background-color-cards);
+    padding: 50px;
+}
