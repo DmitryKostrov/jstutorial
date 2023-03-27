@@ -9,16 +9,34 @@
 </head>
 <body>
     <header>
-        <h1 class="result-txt">Result</h1>
+        <h1 id="result-txt">Result</h1>
     </header>
     <div class="conteiner-space">
         <card-info>
-            <form action="" method="post">
+            <form>
                 <label>Enter Text</label>
-                <input type="text">
-                <button type="submit">Click me</button>
+                <input type="text" id="message" placeholder="Enter text">
+                <input type="button" id="bt-input-text" onclick='output_simple_text()' value="Click me">
+            </form>
+        </card-info>
+        <card-info>
+            <form>
+                <label>Calculate</label>
+                <input type="number" id="number-one" placeholder="Enter number one">
+                <input type="number" id="number-two" placeholder="Enter number two">
+                <input type="button" id="bt-input-text-two" onclick='simple_calculate()' value="Click me">
+            </form>
+        </card-info>
+        <card-info>
+            <form>
+                <label>Enter Text</label>
+                <input type="text" id="message" placeholder="Enter text">
+                <input type="button" id="bt-input-text" onclick='output_simple_text()' value="Click me">
             </form>
         </card-info>
     </div>
+    <script src="src/js/main.js">
+        // Main Script - Главный скрипт
+    </script>
 </body>
 </html>

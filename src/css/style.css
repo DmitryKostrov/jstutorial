@@ -30,13 +30,16 @@ header h1{
 }
 .conteiner-space{
     margin: 10px;
+    justify-content: center;
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    row-gap: 20px;
+    grid-gap: 20px;
 }
 card-info{
     color: var(--color-text-cards);
     width: 200px;
     background-color: var(--background-color-cards);
-    padding: 50px;
+}
+#bt-input-text{
+    width: auto;
 }
