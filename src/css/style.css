@@ -26,7 +26,7 @@ header h1{
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    body { background-color: aqua; }
+    body { background-color: rgb(179, 179, 179); }
 }
 .conteiner-space{
     margin: 10px;
@@ -40,6 +40,15 @@ card-info{
     width: 200px;
     background-color: var(--background-color-cards);
 }
+card-info form{
+    padding: 10px;
+}
 #bt-input-text{
     width: auto;
+}
+grid-color{
+    margin: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25px 25px 25px 25px 25px 25px 25px;
 }
