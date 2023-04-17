@@ -145,7 +145,7 @@ function task_eight(_name_input_user, _age_input_user){
     //  Создай новую функцию, в которую передаешь имя и возраст человека и получаешь сообщение
     // (Иван имеет возраст 44 и он зрелый). А также вызови внутри своей функции, функцию из прошлого задания
 
-    return (_name_input_user + " имеет возраст " + _age_input_user + " и он " + task_seven(_age_input_user))
+    return (_name_input_user + " имеет возраст " + _age_input_user + " и он " + task_seven(_age_input_user).split(" ")[2])
 
 }
 
@@ -157,4 +157,6 @@ console.log(task_five("Какой прекрасный день. Сегодня 
 console.log(task_six("Дима"));
 console.log(task_seven("11"));
 console.log(task_eight("Иван", 44))
+
+//----------------Базовые задачи закончились-------------------------------------------------
 
