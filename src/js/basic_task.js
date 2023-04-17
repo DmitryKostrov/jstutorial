@@ -115,15 +115,38 @@ function task_six(_name_user){
         return "Доброй ночи " + _name_user;
     } else if (_date_user >= 5 && _date_user < 12) {
         return "Доброе утро " + _name_user;
-    } else if (_date_user >= 12 && _date_user < 18) {
+    } else if (_date_user >= 13 && _date_user < 18) {
         return "Добрый день " + _name_user;
-    } else if (_date_user >= 18 && _date_user < 24) {
+    } else if (_date_user >= 19 && _date_user < 24) {
         return "Добрый вечер " + _name_user;
     }
 }
 function task_seven(_input_age){
     //Вывести числа от 1 до 100 в столбец. К каждой цифре подписать состояние возраста
     // (1-17 ребенок, 18-30 - молодой, 30-55 - зрелый, от 55 - старый). Например. 33 - зрелый
+
+    //  Первый вариант
+    if (_input_age >= 1 && _input_age <= 17) { // Если возраст меньше 18 лет то возвращаем возраст и надпись ребенок
+        return (_input_age + " - ребонок")
+    }
+    else if (_input_age >= 18 && _input_age <=30) {
+        return (_input_age + " - молодой")
+    }
+    else if (_input_age >= 31 && _input_age <=55) {
+        return (_input_age + " - зрелый")
+    }
+    else if (_input_age >= 56) {
+        return (_input_age + " - старый")
+    }
+
+}
+
+function task_eight(_name_input_user, _age_input_user){
+    //  Создай новую функцию, в которую передаешь имя и возраст человека и получаешь сообщение
+    // (Иван имеет возраст 44 и он зрелый). А также вызови внутри своей функции, функцию из прошлого задания
+
+    return (_name_input_user + " имеет возраст " + _age_input_user + " и он " + task_seven(_age_input_user))
+
 }
 
 console.log(task_one(20,10));
@@ -132,4 +155,6 @@ console.log(task_three('m'));
 console.log(task_four(5));
 console.log(task_five("Какой прекрасный день. Сегодня вечером можно выйти на прогулку. Но у меня дела."));
 console.log(task_six("Дима"));
+console.log(task_seven("11"));
+console.log(task_eight("Иван", 44))
 
