@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------
 //  Задачки были взяты отсюда https://daruse.ru/zadaniya-po-js-dlya-prokachki
 
-//--------Basic------------------------------
+//--------Базовые------------------------------
 function task_one(_number_one, _number_two) {
     // Написать функцию, которая принимает два числа и возращает результат их умножения
     return ("Result: " + parseInt(_number_one) * parseInt(_number_two))
@@ -149,14 +149,15 @@ function task_eight(_name_input_user, _age_input_user){
 
 }
 
-console.log(task_one(20,10));
-console.log(task_two("Дима", "Костров", 20));
-console.log(task_three('m'));
-console.log(task_four(5));
-console.log(task_five("Какой прекрасный день. Сегодня вечером можно выйти на прогулку. Но у меня дела."));
-console.log(task_six("Дима"));
-console.log(task_seven("11"));
-console.log(task_eight("Иван", 44))
+// console.log(task_one(20,10));
+// console.log(task_two("Дима", "Костров", 20));
+// console.log(task_three('m'));
+// console.log(task_four(5));
+// console.log(task_five("Какой прекрасный день. Сегодня вечером можно выйти на прогулку. Но у меня дела."));
+// console.log(task_six("Дима"));
+// console.log(task_seven("11"));
+// console.log(task_eight("Иван", 44))
 
+export {task_one, task_two, task_three, task_four, task_five, task_six, task_seven, task_eight}
 //----------------Базовые задачи закончились-------------------------------------------------
 

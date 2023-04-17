@@ -1,3 +1,5 @@
+
+
 let _result_output = document.getElementById("result-txt");
 let _header_output = document.getElementById("space-output")
 
@@ -62,7 +64,7 @@ function change_color_text(_color_choose){
         default:
             _result_output.style.color = '#fff';
     }
-    
+
 }
 function change_color_background(_color_choose){
     switch(_color_choose) {
@@ -145,4 +147,10 @@ function json_processing(){
 }
 
 
-
+// function basic_module(_option_tasks, _input_user_one, _input_user_two, _input_user_three){ // _option_tasks - Выбор задачи если 1 то вызывается task_one(_input_user_one, _input_user_two, _input_user_three);
+//     switch (_option_tasks){
+//         case "one":
+//             console.log(task_one(_input_user_one, _input_user_two))
+//             break;
+//     }
+// }
